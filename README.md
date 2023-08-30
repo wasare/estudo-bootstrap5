@@ -1,3 +1,3 @@
 # Estudos de Bootstrap 5
-## containers....
-## imagens, etc
+## container, container-fluid
+## grid, row, col
