@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 - Exemplos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bs-custom.css"  rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row table-responsive">
+            <h1>Tabelas</h1>
+            <table class="table table-sm table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            Salas
+                        </th>
+                        <th>
+                            Descrição
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="table-danger">
+                            A204
+                        </td>
+                        <td>
+                            Laboratório de informática com capacidade de 40 alunos.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            A117
+                        </td>
+                        <td>
+                            Laboratório de informática para até 28 alunos.
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>
+                            C202
+                        </td>
+                        <td>
+                            Sala de aula para até 40 alunos.
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="row">
+            <h1>Cores</h1>
+            <p class="text-danger">Exemplo de cor de texto</p>
+            <p class="bg-primary">Exemplo de cor de fundo</p>
+            <div class="text-bg-secundary">Exemplo de cor de fundo do texto</div>
+            <div class="bg-info p-5"> Exemplo de cor primary personalizada</div>
+        </div>
+        <div class="row">
+            <h1>Imagens</h1>
+            <div class="col">
+                <img src="img/carousel-6402074_1280.jpg" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="img/carousel-6402074_640.jpg" class="rounded float-end">
+            </div>
+            <div class="col">
+                <img src="img/railway-2439189_640.jpg" class="rounded-circle">
+            </div>
+            <div class="col">
+                <img src="img/village-3735180_640.jpg" class="img-thumbnail">
+            </div>
+            <div class="col">
+                <img src="img/railway-2439189_640.jpg" class="mx-auto d-block">
+            </div>
+        </div>
+        <div class="row">
+            <h1>Jumbotron</h1>
+            <div class="mt-4 p-5 text-white rounded bg-primary">
+              <h1>Jumbotron Exemplo</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, placeat natus voluptatibus omnis veniam ratione officiis quidem illum eveniet porro.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h1>Alerts</h1>
+            <!--
+                nomes para padrões
+                primary, secundary, info, success, danger, warning, dark, light
+            -->
+            <div class="alert alert-primary">
+                Alerta de cor primária
+            </div>
+            <div class="alert alert-info">
+                Alerta de cor de informação
+                <p><b>INFORMÇÃO</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+            <h1>Buttons</h1>
+            <button class="btn">
+                Básico
+            </button>
+            <button class="btn btn-warning">
+                Aviso
+            </button>
+            <button class="btn btn-link">
+                Formato de link
+            </button>
+            <a href="#" class="btn btn-info">
+                Link de aviso
+            </a>
+            <input type="submit" class="btn btn-primary mb-5" placeholder="input">
+
+            <button class="btn btn-outline-primary">
+                Outline cor secundária
+            </button>
+            <button class="btn btn-warning btn-lg">
+                Botão grande
+            </button>
+            <button class="btn btn-warning disabled">
+                Botão pequeno desativado.
+            </button>
+            <!--
+                tamanhos usando sufixo
+                -lg => large => Grande
+                -sm => small => Pequena
+            -->
+            <button class="btn btn-info disabled">
+                <span class="spinner-border">
+                </span>
+                Aguarde...
+            </button>
+        </div>
+        </div>
+        <div>
+            <h1>Button groups</h1>
+            <div class="btn-group mb-5">
+              <button class="btn btn-primary">Ver</button>
+              <button class="btn btn-info">Editar</button>
+              <button class="btn btn-info">Excluir</button>
+            </div>
+            <div class="btn-group-vertical mb-5">
+              <button class="btn btn-primary">Ver</button>
+              <button class="btn btn-info">Editar</button>
+              <button class="btn btn-info">Excluir</button>
+            </div>
+            <div class="btn-group mb-5">
+              <button class="btn btn-primary">Ver</button>
+              <div class="btn-group">
+                <button 
+                  class="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown">
+                    Opções
+                </button>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">
+                    Editar
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Excluir
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div>
+          <h1>Badges</h1>
+          <p>Exemplo "Distintivo" 
+            <span class="badge bg-warning text-dark">
+              Novo
+            </span>
+          </p>
+          <p>
+            Exemplo formato pílula 
+            <span class="badge bg-info rounded-pill text-dark">
+              badge
+            </span>
+          </p>
+          <button class="btn btn-primary">
+            Pedidos em aberto 
+            <span class="badge bg-danger">
+              12
+            </span>
+          </button>
+        </div>
+        <div class="mb-5">
+          <h1>Progress bars</h1>
+          <div class="progress">
+            <div class="progress-bar bg-secondary"
+            style="width: 60%">60%</div>
+          </div>
+          <div class="progress mt-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 80%">
+
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+            <h1>Spinners</h1>
+            <div class="spinner-border  text-danger"></div>
+            <div class="spinner-border text-secundary"></div>
+            <div class="spinner-grow spinner-grow-sm text-warning"></div>
+        </div>
+        <div class="row mb-5">
+            <h1>Basic Pagination</h1>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a href="#?page=10" class="page-link">Anterior</a>
+                </li>
+                <li class="page-item">
+                    <a href="#?page=1" class="page-link">1</a>
+                </li>
+                <li class="page-item active">
+                    <a href="#?page=2" class="page-link">2</a>
+                </li>
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">Próxima</a>
+                </li>
+            </ul>
+            <!-- LIMIT E OFFSET -->
+            <h2>Breadcrumbs</h2>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">Cursos</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    Técnico em Programação para Internet
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <h1>Basic List Groups</h1>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    Primeiro
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    Segundo
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active">
+                    Terceiro
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
